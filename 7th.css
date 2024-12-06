@@ -1,0 +1,162 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.header .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffdfdf;
+}
+
+.hero {
+    background: linear-gradient(to right, #ff758c, #ff7eb3), url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background: #ffdfdf;
+    color: #ff758c;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background: #ffe8e8;
+}
+
+.about, .menu, .reservations {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    width: 280px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item h3 {
+    font-size: 1.6rem;
+    color: #ff758c;
+}
+
+.menu-item span {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+.reservations form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.reservations input, .reservations button {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.reservations button {
+    background: #ff758c;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reservations button:hover {
+    background: #ff8fa2;
+}
+
+.footer {
+    background: #ff758c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
